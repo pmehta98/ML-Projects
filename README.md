@@ -24,9 +24,3 @@ Each project has its own **README.md**, which includes a detailed explanation of
 - **Key Insights:** Fine-tuned transformer models significantly outperform traditional ML approaches.
 
 ---
-
-### **1️⃣ Install Dependencies**
-Navigate to the specific project folder and install the required packages:
-```sh
-pip install -r requirements.txt
-
