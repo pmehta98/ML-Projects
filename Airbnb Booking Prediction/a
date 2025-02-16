@@ -1,1 +1,54 @@
+# 🏡 Airbnb Booking Demand Prediction
 
+## 📌 Project Overview
+Predicting **Airbnb booking demand** is crucial for **hosts, property managers, and platform optimization**. This project aims to **forecast the number of days a listing will be booked in the next 30 days** using **machine learning models** trained on real Airbnb data from Los Angeles. 
+
+By leveraging **listing attributes, host information, availability trends, and seasonality**, this model helps hosts make **data-driven pricing and availability decisions** while improving overall demand forecasting.
+
+## 📊 Dataset
+The dataset consists of **real Airbnb listings** from Los Angeles, including details such as **price, location, availability history, and host attributes**.
+
+### **🔑 Key Features Used**
+- **Listing Attributes:** Price, number of bedrooms, bathrooms, accommodates, property type, etc.
+- **Host Information:** Superhost status, number of reviews, response time, etc.
+- **Geographical Data:** Neighborhood, latitude, longitude.
+- **Availability Trends:** `availability_30` and historical booking patterns.
+- **Seasonality Factors:** Day of the week, holidays, and event-based demand fluctuations.
+
+---
+
+## 🛠️ Methodology
+
+### **1️⃣ Data Preprocessing & Feature Engineering**
+- **Handled missing values** using median/mean imputation.
+- **Created new features**, including:
+  - `price_per_person`
+  - `booking_ratio` (availability vs. total possible bookings)
+  - One-hot encoding for categorical variables.
+  - Temporal indicators for seasonality trends.
+  
+### **2️⃣ Model Selection & Training**
+- **Evaluated multiple machine learning models**:
+  - Linear Regression
+  - Decision Trees
+  - Random Forest
+  - XGBoost
+  - LightGBM
+- **Used cross-validation** for hyperparameter tuning and model selection.
+- **Final model selection** was based on **R² score and feature importance analysis**.
+
+### **3️⃣ Feature Importance Analysis**
+- Applied **SHAP values** and **permutation importance** to identify key features.
+- **Top Influential Factors**:
+  - **Price**
+  - **Location (Neighborhood & Latitude/Longitude)**
+  - **Availability trends**
+  - **Host credibility metrics**
+
+---
+
+## 📈 Results
+- **Validation R² Score:** **X%** (Replace X with actual score)
+- **Expected Performance on New Data:** **Y%** (Replace Y with estimated generalization performance)
+
+---
